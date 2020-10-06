@@ -3,9 +3,9 @@ from app import postTweet
 
 sched = BlockingScheduler()
 
-@sched.scheduled_job('cron', day_of_week='mon-fri', hour=17)
+@sched.scheduled_job('interval', minutes=5)
 def scheduled_job():
-    print('This job is run every weekday at 5 pm.')
+    print('This job is run every 5 mins.')
     postTweet()
 
 sched.start()
