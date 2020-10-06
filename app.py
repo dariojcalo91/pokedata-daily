@@ -16,4 +16,4 @@ api = tweepy.API(auth)
 
 # update the status 
 def postTweet():
-  api.update_status(status ="Hello Everyone !") 
+  api.update_status(status ="Hello Everyone from PYTHON CODE!!") 
