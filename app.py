@@ -16,8 +16,8 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth) 
 
 #pokemon data to post
-name, ptp1, ptp2 = pokemon_data()
-tweet_message = "Daily Pokedesk data: " + name + " type: " + ptp1 + " - " + ptp2 + " - published by python code -"
+name, ptp1 = pokemon_data()
+tweet_message = "Daily Pokedesk data: " + name + " type: " + ptp1 + " - published by python code -"
 
 # update the status 
 def postTweet():
